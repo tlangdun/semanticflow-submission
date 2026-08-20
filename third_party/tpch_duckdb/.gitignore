@@ -1,0 +1,13 @@
+# TPC-H warehouse data (regenerable natively in DuckDB at sf=0.05) — too large for git
+*.duckdb
+*.duckdb.wal
+
+# dbt build artefacts
+target/
+logs/
+dbt_packages/
+
+# pipeline-generated semantic layer (SemanticFlow writes these per run) + its backups
+models/semantic/semantic_models.yml
+models/semantic/metrics.yml
+*.bak.*

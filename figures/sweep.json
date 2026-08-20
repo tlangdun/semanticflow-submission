@@ -1,0 +1,195 @@
+{
+  "no_hitl_id": "cheap-fixed-nohitl",
+  "hitl_id": "cheap-fixed-hitl",
+  "signal": "total_uncertainty",
+  "n_tasks": 58,
+  "basis_filter": "execution",
+  "accuracy_never_ask": 0.7527,
+  "accuracy_always_ask": 0.7756,
+  "best_point": {
+    "threshold": 0.05,
+    "num_triggered": 30,
+    "trigger_fraction": 0.5172,
+    "questions_asked": 124,
+    "mean_accuracy": 0.8618
+  },
+  "oracle_routing": {
+    "accuracy": 0.9562,
+    "num_triggered": 13,
+    "questions_asked": 52,
+    "tasks_helped_by_asking": 13,
+    "tasks_hurt_by_asking": 11
+  },
+  "questions_at_fixed_accuracy": {
+    "match_90pct_of_always": {
+      "target_accuracy": 0.698,
+      "threshold": 0.85,
+      "questions_asked": 0,
+      "trigger_fraction": 0.0,
+      "mean_accuracy": 0.7527
+    },
+    "match_95pct_of_always": {
+      "target_accuracy": 0.7368,
+      "threshold": 0.85,
+      "questions_asked": 0,
+      "trigger_fraction": 0.0,
+      "mean_accuracy": 0.7527
+    },
+    "match_always": {
+      "target_accuracy": 0.7756,
+      "threshold": 0.5,
+      "questions_asked": 27,
+      "trigger_fraction": 0.1034,
+      "mean_accuracy": 0.779
+    }
+  },
+  "curve": [
+    {
+      "threshold": 0.0,
+      "num_triggered": 58,
+      "trigger_fraction": 1.0,
+      "questions_asked": 245,
+      "mean_accuracy": 0.7756
+    },
+    {
+      "threshold": 0.05,
+      "num_triggered": 30,
+      "trigger_fraction": 0.5172,
+      "questions_asked": 124,
+      "mean_accuracy": 0.8618
+    },
+    {
+      "threshold": 0.1,
+      "num_triggered": 25,
+      "trigger_fraction": 0.431,
+      "questions_asked": 104,
+      "mean_accuracy": 0.8278
+    },
+    {
+      "threshold": 0.15,
+      "num_triggered": 19,
+      "trigger_fraction": 0.3276,
+      "questions_asked": 82,
+      "mean_accuracy": 0.7933
+    },
+    {
+      "threshold": 0.2,
+      "num_triggered": 18,
+      "trigger_fraction": 0.3103,
+      "questions_asked": 77,
+      "mean_accuracy": 0.7933
+    },
+    {
+      "threshold": 0.25,
+      "num_triggered": 17,
+      "trigger_fraction": 0.2931,
+      "questions_asked": 72,
+      "mean_accuracy": 0.8105
+    },
+    {
+      "threshold": 0.3,
+      "num_triggered": 17,
+      "trigger_fraction": 0.2931,
+      "questions_asked": 72,
+      "mean_accuracy": 0.8105
+    },
+    {
+      "threshold": 0.35,
+      "num_triggered": 13,
+      "trigger_fraction": 0.2241,
+      "questions_asked": 55,
+      "mean_accuracy": 0.8364
+    },
+    {
+      "threshold": 0.4,
+      "num_triggered": 10,
+      "trigger_fraction": 0.1724,
+      "questions_asked": 43,
+      "mean_accuracy": 0.8019
+    },
+    {
+      "threshold": 0.45,
+      "num_triggered": 8,
+      "trigger_fraction": 0.1379,
+      "questions_asked": 36,
+      "mean_accuracy": 0.7847
+    },
+    {
+      "threshold": 0.5,
+      "num_triggered": 6,
+      "trigger_fraction": 0.1034,
+      "questions_asked": 27,
+      "mean_accuracy": 0.779
+    },
+    {
+      "threshold": 0.55,
+      "num_triggered": 6,
+      "trigger_fraction": 0.1034,
+      "questions_asked": 27,
+      "mean_accuracy": 0.779
+    },
+    {
+      "threshold": 0.6,
+      "num_triggered": 2,
+      "trigger_fraction": 0.0345,
+      "questions_asked": 9,
+      "mean_accuracy": 0.77
+    },
+    {
+      "threshold": 0.65,
+      "num_triggered": 2,
+      "trigger_fraction": 0.0345,
+      "questions_asked": 9,
+      "mean_accuracy": 0.77
+    },
+    {
+      "threshold": 0.7,
+      "num_triggered": 1,
+      "trigger_fraction": 0.0172,
+      "questions_asked": 4,
+      "mean_accuracy": 0.77
+    },
+    {
+      "threshold": 0.75,
+      "num_triggered": 1,
+      "trigger_fraction": 0.0172,
+      "questions_asked": 4,
+      "mean_accuracy": 0.77
+    },
+    {
+      "threshold": 0.8,
+      "num_triggered": 1,
+      "trigger_fraction": 0.0172,
+      "questions_asked": 4,
+      "mean_accuracy": 0.77
+    },
+    {
+      "threshold": 0.85,
+      "num_triggered": 0,
+      "trigger_fraction": 0.0,
+      "questions_asked": 0,
+      "mean_accuracy": 0.7527
+    },
+    {
+      "threshold": 0.9,
+      "num_triggered": 0,
+      "trigger_fraction": 0.0,
+      "questions_asked": 0,
+      "mean_accuracy": 0.7527
+    },
+    {
+      "threshold": 0.95,
+      "num_triggered": 0,
+      "trigger_fraction": 0.0,
+      "questions_asked": 0,
+      "mean_accuracy": 0.7527
+    },
+    {
+      "threshold": 1.0,
+      "num_triggered": 0,
+      "trigger_fraction": 0.0,
+      "questions_asked": 0,
+      "mean_accuracy": 0.7527
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+.env
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.bak
+*.bak.*
+
+# Experiments and Logs
+experiments/
+logs/
+*.log
+
+# Temp env files
+hitl.env
+
+# macOS
+.DS_Store
+
+# Tooling caches and local virtualenv
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# DuckDB warehouses are build artifacts (regenerable via dbt seed/build).
+# The root Jaffle Shop warehouse is committed so gold-SQL scoring works on a fresh clone.
+*.duckdb
+!/jaffle_shop.duckdb
+
+# Parallel-run scratch copies of the dbt projects
+third_party/tpch_run_*/
+
+# LLM response cache
+.llm_cache/
+
+# dbt-generated local identifiers
+.user.yml
+
+# Dissertation manuscript (kept local, not published with the artifact)
+semanticflow/dissertation/

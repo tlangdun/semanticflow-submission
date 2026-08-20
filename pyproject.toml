@@ -1,0 +1,42 @@
+[project]
+name = "semanticflow-eval"
+version = "0.1.0"
+description = "Multi-agent NL→dbt/MetricFlow semantic-layer generation with hybrid uncertainty and execution-grounded evaluation."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.75.0",
+    "dbt-core>=1.10.17",
+    "dbt-duckdb>=1.10.0",
+    "dbt-metricflow>=0.10.1",
+    "duckdb>=1.4.3",
+    "google-genai>=1.56.0",
+    "numpy>=2.4.6",
+    "openai>=2.14.0",
+    "pydantic>=2.7.0",
+    "pyyaml>=6.0.1",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.17.1",
+    "typer>=0.12.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+    "matplotlib>=3.9.0",
+]
+
+[project.scripts]
+semanticflow = "semanticflow.cli:app"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+extend-select = ["I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

@@ -1,0 +1,974 @@
+{
+  "baseline_id": "cheap-fixed-nohitl",
+  "treatment_id": "cheap-slotguard-hitl",
+  "task_count": 85,
+  "metrics": {
+    "semantic_accuracy_avg": {
+      "baseline": 0.7174259732878658,
+      "treatment": 0.8886426312460468,
+      "delta": 0.17121665795818097
+    },
+    "dbt_parse_success_rate": {
+      "baseline": 1.0,
+      "treatment": 1.0,
+      "delta": 0.0
+    },
+    "dbt_build_success_rate": {
+      "baseline": 1.0,
+      "treatment": 1.0,
+      "delta": 0.0
+    },
+    "mf_validate_success_rate": {
+      "baseline": 1.0,
+      "treatment": 1.0,
+      "delta": 0.0
+    },
+    "mf_query_success_rate": {
+      "baseline": 1.0,
+      "treatment": 1.0,
+      "delta": 0.0
+    },
+    "execution_accuracy_avg": {
+      "baseline": 0.7404998141954664,
+      "treatment": 0.9171105596912048,
+      "delta": 0.1766107454957384
+    }
+  },
+  "by_ambiguity": {
+    "low": {
+      "task_count": 26,
+      "baseline": 0.8973076923076923,
+      "treatment": 0.8812820512820513,
+      "delta": -0.01602564102564097
+    },
+    "medium": {
+      "task_count": 21,
+      "baseline": 0.9216931216931217,
+      "treatment": 0.9346646185355864,
+      "delta": 0.01297149684246468
+    },
+    "high": {
+      "task_count": 38,
+      "baseline": 0.48146453089244856,
+      "treatment": 0.8682456140350877,
+      "delta": 0.38678108314263915
+    }
+  },
+  "by_difficulty": {
+    "simple": {
+      "task_count": 29,
+      "baseline": 0.8734482758620689,
+      "treatment": 0.916551724137931,
+      "delta": 0.0431034482758621
+    },
+    "medium": {
+      "task_count": 42,
+      "baseline": 0.6837589141936968,
+      "treatment": 0.9195545314900154,
+      "delta": 0.2357956172963186
+    },
+    "complex": {
+      "task_count": 9,
+      "baseline": 0.5851851851851851,
+      "treatment": 0.8888888888888888,
+      "delta": 0.3037037037037037
+    }
+  },
+  "per_task": [
+    {
+      "task_id": "ext_001",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_002",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_003",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_004",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_005",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_006",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_007",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_008",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_009",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_010",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 0.16129032258064516,
+      "delta": -0.8387096774193549,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_011",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_012",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_013",
+      "ambiguity": "high",
+      "difficulty": "complex",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_014",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_015",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_016",
+      "ambiguity": "high",
+      "difficulty": "complex",
+      "baseline_score": 0.1,
+      "treatment_score": 1.0,
+      "delta": 0.9,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_017",
+      "ambiguity": "high",
+      "difficulty": "complex",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_018",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_019",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "ext_020",
+      "ambiguity": "high",
+      "difficulty": "complex",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_001",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_002",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_003",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_004",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 0.33,
+      "treatment_score": 0.33,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_005",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_006",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_007",
+      "ambiguity": "low",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_008",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 0.8888888888888888,
+      "treatment_score": 1.0,
+      "delta": 0.11111111111111116,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_009",
+      "ambiguity": "low",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_010",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_011",
+      "ambiguity": "low",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_012",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_013",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0.028985507246376812,
+      "treatment_score": 1.0,
+      "delta": 0.9710144927536232,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_014",
+      "ambiguity": "low",
+      "difficulty": "complex",
+      "baseline_score": 1.0,
+      "treatment_score": 0.3333333333333333,
+      "delta": -0.6666666666666667,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_015",
+      "ambiguity": "medium",
+      "difficulty": "complex",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_016",
+      "ambiguity": "high",
+      "difficulty": "complex",
+      "baseline_score": 0.5,
+      "treatment_score": 1.0,
+      "delta": 0.5,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_017",
+      "ambiguity": "low",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 0,
+      "delta": 0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_018",
+      "ambiguity": "low",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_019",
+      "ambiguity": "medium",
+      "difficulty": "complex",
+      "baseline_score": 0.6666666666666666,
+      "treatment_score": 0.6666666666666666,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_020",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 0.8,
+      "treatment_score": 0.8,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_021",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_022",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_023",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 0.33,
+      "delta": 0.33,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_024",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_025",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_026",
+      "ambiguity": "medium",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_027",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_028",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_029",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 0.33,
+      "delta": 0.33,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_030",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_031",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_032",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_033",
+      "ambiguity": "high",
+      "difficulty": "complex",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_034",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "real_035",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_001",
+      "ambiguity": "high",
+      "difficulty": "unknown",
+      "baseline_score": 0,
+      "treatment_score": 0,
+      "delta": 0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_002",
+      "ambiguity": "high",
+      "difficulty": "unknown",
+      "baseline_score": 0.3333333333333333,
+      "treatment_score": 0.3333333333333333,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_003",
+      "ambiguity": "high",
+      "difficulty": "unknown",
+      "baseline_score": 0.3333333333333333,
+      "treatment_score": 0.6666666666666666,
+      "delta": 0.3333333333333333,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_004",
+      "ambiguity": "high",
+      "difficulty": "unknown",
+      "baseline_score": 0.3333333333333333,
+      "treatment_score": 0.6666666666666666,
+      "delta": 0.3333333333333333,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_005",
+      "ambiguity": "high",
+      "difficulty": "unknown",
+      "baseline_score": 0.6666666666666666,
+      "treatment_score": 0.6666666666666666,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_006",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_007",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_008",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_009",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 0.25,
+      "delta": -0.75,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_010",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_011",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_012",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_013",
+      "ambiguity": "low",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_014",
+      "ambiguity": "low",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_015",
+      "ambiguity": "low",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_016",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_017",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_018",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_019",
+      "ambiguity": "medium",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_020",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_021",
+      "ambiguity": "medium",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_022",
+      "ambiguity": "medium",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_023",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_024",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_025",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_026",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_027",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 0,
+      "treatment_score": 1.0,
+      "delta": 1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_028",
+      "ambiguity": "high",
+      "difficulty": "simple",
+      "baseline_score": 1.0,
+      "treatment_score": 0,
+      "delta": -1.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_029",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    },
+    {
+      "task_id": "synth_030",
+      "ambiguity": "high",
+      "difficulty": "medium",
+      "baseline_score": 1.0,
+      "treatment_score": 1.0,
+      "delta": 0.0,
+      "baseline_mf_success": true,
+      "treatment_mf_success": true
+    }
+  ],
+  "stats": {
+    "overall": {
+      "n_pairs": 78,
+      "baseline_accuracy": 0.7179,
+      "treatment_accuracy": 0.8846,
+      "delta": 0.1667,
+      "delta_ci95": [
+        0.0641,
+        0.2821
+      ],
+      "gains": 17,
+      "regressions": 4,
+      "mcnemar_exact_p": 0.0072,
+      "significant_at_05": true
+    },
+    "high_ambiguity": {
+      "n_pairs": 33,
+      "baseline_accuracy": 0.4848,
+      "treatment_accuracy": 0.9091,
+      "delta": 0.4242,
+      "delta_ci95": [
+        0.2424,
+        0.6061
+      ],
+      "gains": 15,
+      "regressions": 1,
+      "mcnemar_exact_p": 0.0005,
+      "significant_at_05": true
+    },
+    "low_medium_ambiguity": {
+      "n_pairs": 45,
+      "baseline_accuracy": 0.8889,
+      "treatment_accuracy": 0.8667,
+      "delta": -0.0222,
+      "delta_ci95": [
+        -0.1333,
+        0.0667
+      ],
+      "gains": 2,
+      "regressions": 3,
+      "mcnemar_exact_p": 1.0,
+      "significant_at_05": false
+    }
+  },
+  "winner": "treatment"
+}

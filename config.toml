@@ -1,0 +1,53 @@
+# SemanticFlow configuration.
+#
+# Loaded by `load_settings()` (used by the CLI) unless SEMANTICFLOW_CONFIG points
+# elsewhere. Environment variables OVERRIDE these values, and `.env` is loaded into the
+# environment first — so secrets/keys belong in `.env`, tunables belong here.
+#
+# Every value below matches the in-code default, so committing this file changes nothing
+# until you edit it. The experiment knobs are the ones you tune to reproduce results.
+
+[semanticflow]
+
+# --- Models (set API keys in .env: OPENAI_API_KEY / ANTHROPIC_API_KEY / GEMINI_API_KEY) ---
+openai_model    = "gpt-5.4-mini"
+anthropic_model = "claude-haiku-4-5"
+gemini_model    = "gemini-2.5-flash"
+
+# Single-provider used for the baseline_single_agent mapper. MUST be a real provider
+# ("openai" | "anthropic" | "gemini") for a meaningful baseline — "mock" yields the
+# heuristic only. The multi-agent path uses all providers that have keys.
+llm_provider = "mock"
+
+# --- Pipeline ---
+dbt_project_dir = "third_party/jaffle_shop_duckdb"
+run_dbt = true
+mode = "multi_agent_no_hitl"   # baseline_single_agent | multi_agent_no_hitl | multi_agent_hitl
+
+# --- Uncertainty / HITL trigger (the orchestration knobs) ---
+agreement_threshold = 0.75     # ambiguity="high" (HITL fires) when agreement < this.
+                               # Set to 1.01 for a FORCE-ASK run (every task asks) — needed
+                               # to produce a1 for the offline threshold sweep.
+hitl_answer_budget  = 3        # max questions the simulated human will answer per task
+
+# --- Hybrid uncertainty (option C) ---
+self_consistency_k  = 3        # samples per provider -> aleatoric uncertainty. Set 3 to
+                               # enable the aleatoric/total signal (costs k x mapper calls).
+# Cross-model ensemble: keep all THREE providers for the epistemic signal.
+ensemble_providers  = ["openai", "anthropic", "gemini"]
+# Execution-equivalence clustering for the epistemic signal (extra per-provider dbt/mf runs).
+execution_consistency = true
+# LLM disk cache: MUST stay off at k>1 (cache collapses the aleatoric signal to zero).
+# It is also force-disabled in code when self_consistency_k>1, but pin it false here too.
+llm_cache           = false
+
+# --- Experiment robustness ---
+experiment_repeats  = 1        # full-pipeline repeats per task to quantify LLM stochasticity
+                               # (mean accuracy + accuracy_std logged). Set 3-5 for final runs.
+
+# --- Robustness / escape hatches ---
+llm_timeout_sec      = 60.0
+max_llm_repair_attempts = 1
+# skip_mf_validation = false
+# skip_mf_query      = false
+log_level = "INFO"             # DEBUG for verbose

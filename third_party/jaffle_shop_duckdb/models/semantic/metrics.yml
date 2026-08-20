@@ -1,0 +1,8 @@
+version: 2
+metrics:
+- name: sales_numbers
+  description: 'Metric for: Give me the sales numbers.'
+  type: simple
+  type_params:
+    measure: amount
+  label: 'Metric for: Give me the sales numbers.'
